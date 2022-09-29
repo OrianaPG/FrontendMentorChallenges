@@ -4,5 +4,5 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Author
 
-- LinkedIn - [Oriana P.](https://www.linkedin.com/in/orianapg/)
+- LinkedIn - [Oriana P.G.](https://www.linkedin.com/in/orianapg/)
 - Frontend Mentor - [@orianapg](https://www.frontendmentor.io/profile/orianapg)
