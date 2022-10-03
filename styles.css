@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900);
 
+:root {
+	font-size: 15px;
+}
+
 body {
 	font-family: Outfit;
 	background-color: hsl(212, 45%, 89%);
@@ -16,14 +20,16 @@ body {
 }
 
 .card {
-	height: fit-content;
+	height: auto;
 	width: 320px;
 	border-radius: 16px;
 	background-color: hsl(0, 0%, 100%);
 	box-shadow: 0px 0px 16px hsla(220, 15%, 55%, 0.5);
-	display: flex;
 	flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	position: relative;
 	margin: auto;
 }
@@ -37,7 +43,7 @@ img {
 
 .text {
 	text-align: center;
-	margin: 4px 32px 16px;
+	margin: 4px 32px;
 }
 
 h1 {
@@ -48,6 +54,5 @@ h1 {
 
 p {
 	font-weight: 400;
-	font-size: 15px;
 	color: hsl(220, 15%, 55%);
 }
