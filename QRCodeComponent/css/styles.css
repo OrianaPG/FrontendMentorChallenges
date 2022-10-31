@@ -40,12 +40,12 @@ body {
 img {
 	width: 280px;
 	border-radius: 8px;
-	margin-top: 18px;
+	margin-top: 20px;
 	display: flex;
 }
 
 .text {
-	margin: 4px 32px;
+	margin: 4px 32px 20px;
 }
 
 h1 {
