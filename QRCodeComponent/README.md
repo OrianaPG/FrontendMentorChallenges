@@ -17,13 +17,10 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ![QR Code Component screenshot](./images/screenshot-qr-code-component-orianapg.png)
 
-
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/qr-code-component-using-flexbox-zLpicKHx07)
-- Live Site URL: [Vercel](https://your-live-site-url.com)
-
--
+- Live Site URL: [Vercel](https://qr-code-component-l58vl0nkt-orianapg.vercel.app/)
 
 ## Author
 
