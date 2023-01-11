@@ -82,8 +82,9 @@ p {
     margin: 16px 0;
 }
 
-strike {
+.oldPrice {
     padding-left: 8px;
+    text-decoration: line-through;
 }
 
 button {
