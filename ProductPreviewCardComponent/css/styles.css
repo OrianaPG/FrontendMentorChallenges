@@ -1,10 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Fraunces:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
+:root {
+    --darkCyan: hsl(158, 36%, 37%);
+    --darkerCyan: hsl(158, 36%, 17%);
+    --cream: hsl(30, 38%, 92%);
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --paragraph: 14px;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    background-color: hsl(30, 38%, 92%);
+    background-color: var(--cream);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -15,26 +25,26 @@ body {
 main {
     display: flex;
     align-items: center;
-    height: 50vh;
-    max-width: 90vw;
+    height: 56vh;
+    max-width: 692px;
     border-radius: 12px;
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--white);
     object-fit: contain;
     overflow: hidden;
 }
 
-picture, img {
-    align-self: safe-center;
-    width: 50vw;
-    height: fit-content;
+source,
+img {
+    max-width: 346px;
 }
 
 .info {
     flex-wrap: wrap;
-    padding: 3.5% 3%;
+    max-width: 310px;
+    padding: 3.5% 5%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .perfume {
@@ -44,24 +54,32 @@ picture, img {
 h1 {
     font-family: 'Fraunces', serif;
     font-weight: 700;
-    color: hsl(212, 21%, 14%);
+    color: var(--veryDarkBlue);
+    margin: 16px 0;
+    line-height: 35px;
 }
 
 .prices {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .discountedPrice {
-    color: hsl(158, 36%, 37%);
+    color: var(--darkCyan);
     display: inline;
     padding-right: 12px;
 }
 
 p,
 span {
-    font-size: 14px;
-    color: hsl(228, 12%, 48%);
+    font-size: var(--paragraph);
+    color: var(--darkGrayishBlue);
+}
+
+p {
+    line-height: 25px;
+    margin: 16px 0;
 }
 
 strike {
@@ -71,10 +89,10 @@ strike {
 button {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    background-color: hsl(158, 36%, 37%);
+    background-color: var(--darkCyan);
     color: hsl(0, 0%, 100%);
     border-radius: 8px;
-    border: 2px solid hsl(158, 36%, 37%);
+    border: 2px solid var(--darkCyan);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,8 +103,9 @@ button {
 
 button:hover,
 button:active {
-    background-color: hsl(156, 42%, 18%);
-    border: 2px solid hsl(156, 42%, 18%);
+    background-color: var(--darkerCyan);
+    border: 2px solid var(--darkerCyan);
+    cursor: pointer;
 }
 
 svg {
@@ -100,5 +119,40 @@ svg {
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--darkGrayishBlue);
+}
+
+.attribution a:hover {
+    color: var(--veryDarkBlue);
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        height: fit-content;
+        width: 90vw;
+    }
+
+    picture {
+        object-fit: cover;
+    }
+
+    source,
+    img {
+        width: 90vw;
+        max-width: 768px;
+    }
+
+    .info {
+        padding: 22px;
+        max-width: 768px;
+    }
+
+    h1 {
+        margin: 8px 0;
+    }
+
+    p {
+        margin: 8px 0;
+    }
 }
