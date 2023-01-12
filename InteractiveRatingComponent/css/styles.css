@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Overpass:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey: hsl(216, 12%, 54%);
+    --mediumBlue: hsl(213, 19%, 22%);
+    --darkBlue: hsl(213, 19%, 18%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+    --family: 'Overpass', sans-serif;
+    --paragraph: 15px;
+}
+
+body {
+    font-family: var(--family);
+    font-size: var(--paragraph);
+    font-weight: 400;
+    background-color: var(--veryDarkBlue);
+    color: var(--lightGrey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rating,
+.thankYou {
+    background: var(--darkBlue);
+    border-radius: 16px;
+    padding: 32px 24px;
+    width: 320px;
+    margin: 16px 0;
+}
+
+.thankYou {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.star {
+    background-color: var(--mediumBlue);
+    padding: 14px;
+    border-radius: 24px;
+}
+
+h1 {
+    color: var(--white);
+    font-weight: 700;
+}
+
+button {
+    font-family: var(--family);
+    font-size: var(--paragraph);
+    font-weight: 500;
+}
+
+.selectRating {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.choice {
+    background-color: var(--mediumBlue);
+    color: var(--lightGrey);
+    border: none;
+    border-radius: 32px;
+    width: 48px;
+    height: 48px;
+}
+
+.choice:hover {
+    background-color: var(--lightGrey);
+    color: var(--white);
+}
+
+.choice:active {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.message {
+    width: 300px;
+}
+
+.center {
+    text-align: center;
+}
+
+.submit {
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    border-radius: 24px;
+    text-transform: uppercase;
+    padding: 12px;
+    width: 100%;
+}
+
+.submit:hover,
+.submit:active {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.selection {
+    background-color: var(--mediumBlue);
+    color: var(--orange);
+    padding: 8px 16px;
+    border-radius: 16px;
+}
+
+.thanks {
+    margin: 6px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--white);
+}
+
+.attribution a:hover {
+    color: var(--lightGrey);
+}
