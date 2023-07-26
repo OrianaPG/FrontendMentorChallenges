@@ -2,6 +2,8 @@
 
 This is my solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa).
 
+![Desktop view](images/desktopView.png)
+
 ## Overview
 
 ### The challenge
@@ -10,16 +12,6 @@ Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 - See hover and focus states for interactive elements
-
-### Screenshots
-
-#### Desktop view
-
-![Desktop view](images/desktopView.png)
-
-#### Mobile view
-
-![Mobile view](images/mobileView.png)
 
 ### Links
 
@@ -30,9 +22,5 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- Media queries
-- Mobile-first workflow
-  
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
