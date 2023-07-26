@@ -6,6 +6,7 @@ These are my solutions to [Frontend Mentor's challenges](https://www.frontendmen
 
 - QR Code Component: [Live site](https://qr-code-component-orianapg.vercel.app/)
 - Product Preview Card : [Live site](https://product-preview-card-component-orianapg.vercel.app/)
+- Interactive Rating Component: [Live site](https://interactive-rating-component-git-main-orianapg.vercel.app/)
 
 ## Author
 

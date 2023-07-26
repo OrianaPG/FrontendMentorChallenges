@@ -4,8 +4,6 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- displays site properly based on user's device -->
-
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
         <link rel="stylesheet" href="./css/styles.css">
         <title>Frontend Mentor | Interactive rating component</title>
@@ -13,6 +11,8 @@
 
     <body>
         <main>
+
+            <!--Rating component-->
             <div class="rating">
                 <svg class="star" width="17" height="16" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -24,7 +24,7 @@
                 <p class="message">Please let us know how we did with your support request. All feedback is appreciated
                     to help us improve our offering!</p>
 
-                <form action="submit">
+                <form>
                     <div class="selectRating">
                         <button class="choice">1</button>
                         <button class="choice">2</button>
@@ -32,12 +32,13 @@
                         <button class="choice">4</button>
                         <button class="choice">5</button>
                     </div>
-    
+
                     <button class="submit">Submit</button>
                 </form>
             </div>
 
-            <div class="thankYou">
+            <!--Thank you component-->
+            <div class="thankYou hidden">
                 <svg class="sent" width="162" height="108" xmlns="http://www.w3.org/2000/svg">
                     <g fill="none">
                         <path
@@ -74,22 +75,23 @@
                             fill="#FFF" />
                     </g>
                 </svg>
-                <p class="selection">You selected <!-- Add rating here --> out of 5</p>
+
+                <p class="selection">You selected <span id="selectedRating"></span> out of 5</p>
 
                 <h1 class="thanks">Thank you!</h1>
 
-                <p class="message center">We appreciate you taking the time to give a rating. If you ever need more support,
-                    don’t hesitate to get in touch!</p>
+                <p class="message center">We appreciate you taking the time to give a rating. If you ever need more
+                    support, don't hesitate to get in touch!</p>
             </div>
 
         </main>
-
-
 
         <footer class="attribution">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
             Coded by <a href="https://www.linkedin.com/in/orianapg/">Oriana P.G.</a>.
         </footer>
+
+        <script src="./js/index.js"></script>
     </body>
 
 </html>
