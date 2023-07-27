@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Kumbh+Sans:100,200,300,regular,500,600,700,800,900);
+
+:root {
+    --primaryTextBlue: hsl(238, 29%, 16%);
+    --primaryTextRed: hsl(14, 88%, 65%);
+    --primaryGradientViolet: hsl(273, 75%, 66%);
+    --primaryGradientBlue: hsl(240, 73%, 65%);
+    --neutralTextDarkBlue: hsl(237, 12%, 33%);
+    --neutralTextBlue: hsl(240, 6%, 50%);
+    --neutralDividerBlue: hsl(240, 5%, 91%);
+    --family: 'Kumbh Sans', sans-serif;
+    --paragraph: 14px;
+    --titleWeight: 700;
+    --paragraphWeight: 400;
+}
+
+body {
+    font-family: var(--family);
+    font-size: var(--paragraph);
+    font-weight: var(--paragraphWeight);
+    background: var(--primaryGradientBlue);
+    background: linear-gradient(0deg, var(--primaryGradientBlue) 0%, var(--primaryGradientViolet) 100%);
+    color: var(--neutralTextBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    background-color: hsl(0, 0%, 97%);
+    border-radius: 24px;
+    padding: 4em 2em;
+    width: 60%;
+}
+
+.desktopImage {
+    display: block;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .desktopImage {
+        display: none;
+    }
+}
+
+h1 {
+    color: var(--primaryTextBlue);
+}
+
+summary {
+    font-size: 16px;
+    color: var(--neutralTextDarkBlue);
+}
+
+summary:hover {
+    color: var(--primaryTextRed);
+    font-weight: var(--titleWeight);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+summary:focus {
+    color: var(--primaryTextBlue);
+    font-weight: var(--titleWeight);
+    transition: 0.3s;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    color: var(--neutralDividerBlue);
+    background-color: var(--neutralDividerBlue);
+}
+
+.attribution {
+    font-size: var(--paragraph);
+    text-align: center;
+    color: var(--primaryTextBlue);
+}
+
+.attribution a {
+    color: var(--primaryTextBlue);
+}
+
+.attribution a:hover {
+    color: var(--primaryTextRed);
+    transition: 0.3s;
+}
